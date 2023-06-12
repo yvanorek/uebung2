@@ -12,6 +12,11 @@ public class imperalapiController {
         return "type localhost:8080/inchToCentimeter in order to convert inchToCentimeter" + "<br>"+"type localhost:8080/yardtoMeter in order to convert yardtoMeter";
     }
 
+    @RequestMapping("/inchToCentimeter")
+    public double inchToCentimeter(@RequestParam double i){
+        return i*2.54;
+    }
+
 
 
 }
