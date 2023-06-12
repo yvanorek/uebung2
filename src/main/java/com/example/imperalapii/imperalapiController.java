@@ -17,6 +17,12 @@ public class imperalapiController {
         return i*2.54;
     }
 
+    @RequestMapping("/yardToMeter")
+    public String yardToMeter(@RequestParam double y){
+        return String.format("%f yard are %f meter",y, y/1.0936133);
+    }
+
+
 
 
 }
